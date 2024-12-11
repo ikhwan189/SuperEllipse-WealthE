@@ -25,7 +25,7 @@ except Exception as e:
 
 !pip cache purge
 !pip install --upgrade pip
-!mkdir /hoem/cdsw/packages
-!pip download --no-cache-dir --log 0_session-install-dependencies/pip-down.log -r 0_session-install-dependencies/requirements.txt --dest /hoem/cdsw/packages
-!pip install --no-cache-dir --log 0_session-install-dependencies/pip-req.log --no-index --find-links=/hoem/cdsw/packages  -r 0_session-install-dependencies/requirements.txt 
+!mkdir /home/cdsw/packages
+!pip download --no-cache-dir --log 0_session-install-dependencies/pip-down.log -r 0_session-install-dependencies/requirements.txt --dest /home/cdsw/packages
+!pip install --no-cache-dir --log 0_session-install-dependencies/pip-req.log --no-index --find-links=/home/cdsw/packages  -r 0_session-install-dependencies/requirements.txt 
 #!pip install --no-cache-dir --log 0_session-install-dependencies/pip-req.log -r 0_session-install-dependencies/requirements.txt
