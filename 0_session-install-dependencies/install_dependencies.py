@@ -23,6 +23,6 @@ except Exception as e:
     print (f"You need to use a Runtime with ollama to make this application work. Have you chosen the right runtime ?")
     sys.exit(1)  # Exit with a non-zero status code
 
-
+!pip cache purge
 !pip install --upgrade pip
 !pip install --no-cache-dir --log 0_session-install-dependencies/pip-req.log -r 0_session-install-dependencies/requirements.txt
