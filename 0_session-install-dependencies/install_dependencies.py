@@ -23,9 +23,9 @@ except Exception as e:
     print (f"You need to use a Runtime with ollama to make this application work. Have you chosen the right runtime ?")
     sys.exit(1)  # Exit with a non-zero status code
 
-!pip cache purge
-!pip install --upgrade pip
-!mkdir /home/cdsw/packages
-!pip download --no-cache-dir --log 0_session-install-dependencies/pip-down.log -r 0_session-install-dependencies/requirements.txt --dest /home/cdsw/packages
+#!pip cache purge
+#!pip install --upgrade pip
+#!mkdir /home/cdsw/packages
+#!pip download --no-cache-dir --log 0_session-install-dependencies/pip-down.log -r 0_session-install-dependencies/requirements.txt --dest /home/cdsw/packages
 !pip install --no-cache-dir --log 0_session-install-dependencies/pip-req.log --no-index --find-links=/home/cdsw/packages  -r 0_session-install-dependencies/requirements.txt 
 #!pip install --no-cache-dir --log 0_session-install-dependencies/pip-req.log -r 0_session-install-dependencies/requirements.txt
